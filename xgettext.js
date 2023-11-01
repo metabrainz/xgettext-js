@@ -1,5 +1,5 @@
 var _ = require( 'lodash' ),
-	parser = require( '@babel/parser' ),
+	parser = require( 'hermes-parser' ),
 	walk = require( 'estree-walker' ).walk;
 
 /**
@@ -83,7 +83,7 @@ XGettext.prototype.getMatches = function( input ) {
 	matches = this._discoverMatches( parsedInput );
 
 	// Use configured keyword transforms to parse string value
-	transformedMatches = _( matches ).map( function( match ) {
+	transformedMatches = _( matches ).sortBy( [ 'line', 'column' ] ).map( function( match ) {
 		return this._transformMatch( match );
 	}.bind( this ) ).flatten().value();
 
@@ -172,7 +172,7 @@ XGettext.prototype._parseInput = function( input ) {
 
 	return {
 		comments: comments,
-		ast: ast.program,
+		ast: ast,
 	};
 };
 
