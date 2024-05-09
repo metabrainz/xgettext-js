@@ -1,2 +1,11 @@
 node_modules/
 *.log
+
+# Yarn - https://yarnpkg.com/features/caching#zero-installs
+/.yarn/*
+!/.yarn/cache
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
+!/.yarn/versions
