@@ -949,19 +949,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hermes-estree@npm:0.17.0":
-  version: 0.17.0
-  resolution: "hermes-estree@npm:0.17.0"
-  checksum: 10c0/a81476b7cc5f3e7de12b266cd14d84f3804243afc7a8001f95d55f74c8779c25a4e526902ca1586ef1b6aa73782ff4b235792ecbe400d0db0e9a0cc790fcd9da
+"hermes-estree@npm:0.23.0":
+  version: 0.23.0
+  resolution: "hermes-estree@npm:0.23.0"
+  checksum: 10c0/5505fdefc119c516b92adbf7b89cc25768ff5e99b0faca3a5ce4af79cc51feef3236227774ee2f6c45bbe1d9a3fa33786e660195a264697171a85b707bc2cec8
   languageName: node
   linkType: hard
 
-"hermes-parser@npm:0.17.0":
-  version: 0.17.0
-  resolution: "hermes-parser@npm:0.17.0"
+"hermes-parser@npm:0.23.0":
+  version: 0.23.0
+  resolution: "hermes-parser@npm:0.23.0"
   dependencies:
-    hermes-estree: "npm:0.17.0"
-  checksum: 10c0/24bb6964eb820085f8034728cf08ebc23ecc3f4d375e8859b9053790e42a3a5fd0de186ffd37564c3d697051b18dc62021a9f79f38557d0b34d030aa8dd3af53
+    hermes-estree: "npm:0.23.0"
+  checksum: 10c0/a4ca7a66dd8cc65dfc4bb223f696e62ac06f0f32fe8b5889a03ea082291636696e36b1e1593885a19dc2a624d78a96a82cd046fef093de812b27e333350fceea
   languageName: node
   linkType: hard
 
@@ -2118,7 +2118,7 @@ __metadata:
     eslint-config-wpcalypso: "npm:^4.0.1"
     eslint-plugin-wpcalypso: "npm:^4.1.0"
     estree-walker: "npm:^0.6.1"
-    hermes-parser: "npm:0.17.0"
+    hermes-parser: "npm:0.23.0"
     lodash: "npm:^4.17.15"
     mocha: "npm:^6.2.0"
   languageName: unknown
