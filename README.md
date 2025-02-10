@@ -1,16 +1,15 @@
 # xgettext-js
 
-[![Build Status](https://travis-ci.org/Automattic/xgettext-js.svg?branch=master)](https://travis-ci.org/Automattic/xgettext-js)
-[![NPM version](https://badge.fury.io/js/xgettext-js.svg)](http://badge.fury.io/js/xgettext-js)
+> **Note:** This is a fork of [Automattic/xgettext-js](https://github.com/Automattic/xgettext-js) which switches from `@babel/parser` to `hermes-parser`.
 
-xgettext-js is a utility for extracting translatable strings, written in and capable of parsing JavaScript files. It is similar to the [GNU xgettext](http://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/xgettext-Invocation.html) program, but returns strings as a JavaScript array. It makes use of [@babel/parser](https://www.npmjs.com/package/@babel/parser) and [estree-walker](https://github.com/Rich-Harris/estree-walker) to parse JavaScript code, which facilitates the use of custom logic for string extraction. Because of this, xgettext-js is quite flexible, allowing you to define your own logic for extracting strings from any number of function keywords.
+xgettext-js is a utility for extracting translatable strings, written in and capable of parsing JavaScript files. It is similar to the [GNU xgettext](http://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/xgettext-Invocation.html) program, but returns strings as a JavaScript array. It makes use of [hermes-parser](https://www.npmjs.com/package/hermes-parser) and [estree-walker](https://github.com/Rich-Harris/estree-walker) to parse JavaScript code, which facilitates the use of custom logic for string extraction. Because of this, xgettext-js is quite flexible, allowing you to define your own logic for extracting strings from any number of function keywords.
 
 ## Installation
 
 xgettext-js is a [Node.js](http://nodejs.org/) package available through [npm](https://www.npmjs.org/). You must first [install Node.js](http://nodejs.org/download/) if it is not already installed, which will also install the npm package manager. Once installed, use your terminal to execute the following command from your project directory:
 
 ```bash
-$ npm install xgettext-js
+$ npm install @metabrainz/xgettext-js
 ```
 
 ## Usage
@@ -20,7 +19,7 @@ An instance of xgettext-js exposes a `getMatches` method which, when passed a Ja
 Below is an example of this simple use case in a Node.js application:
 
 ```javascript
-var XGettext = require( 'xgettext-js' ),
+var XGettext = require( '@metabrainz/xgettext-js' ),
 	source = '_( "Hello World!" ); /* translators: greeting */',
 	parser = new XGettext();
 
