@@ -1,6 +1,6 @@
 {
   "name": "@metabrainz/xgettext-js",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "author": "Andrew Duthie <andrew@andrewduthie.com>",
   "description": "xgettext string extractor tool capable of parsing JavaScript files",
   "type": "module",
