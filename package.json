@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "estree-walker": "^0.6.1",
-    "hermes-parser": "0.26.0",
+    "hermes-parser": "0.32.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {

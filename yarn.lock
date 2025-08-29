@@ -33,6 +33,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metabrainz/xgettext-js@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@metabrainz/xgettext-js@workspace:."
+  dependencies:
+    chai: "npm:^4.2.0"
+    eslint: "npm:^5.16.0"
+    eslint-config-wpcalypso: "npm:^4.0.1"
+    eslint-plugin-wpcalypso: "npm:^4.1.0"
+    estree-walker: "npm:^0.6.1"
+    hermes-parser: "npm:0.32.0"
+    lodash: "npm:^4.17.15"
+    mocha: "npm:^6.2.0"
+  languageName: unknown
+  linkType: soft
+
 "acorn-jsx@npm:^5.0.0":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -949,19 +964,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hermes-estree@npm:0.26.0":
-  version: 0.26.0
-  resolution: "hermes-estree@npm:0.26.0"
-  checksum: 10c0/4bf734b0ae484f654724f114939d349b39afe81af0f255b2e15d0fecfe2fd122f36f0b65893e936336e1a4cc77e4124ca962d054a17519f33036e20706a5386d
+"hermes-estree@npm:0.32.0":
+  version: 0.32.0
+  resolution: "hermes-estree@npm:0.32.0"
+  checksum: 10c0/3b67d1fe44336240ef7f9c40ecbf363279ba263d51efe120570c3862cc109e652fc09aebddfe6b73d0f0246610bee130e4064c359f1f4cbf002bdb1d99717ef2
   languageName: node
   linkType: hard
 
-"hermes-parser@npm:0.26.0":
-  version: 0.26.0
-  resolution: "hermes-parser@npm:0.26.0"
+"hermes-parser@npm:0.32.0":
+  version: 0.32.0
+  resolution: "hermes-parser@npm:0.32.0"
   dependencies:
-    hermes-estree: "npm:0.26.0"
-  checksum: 10c0/8c6340a52a10ac59ff7ab6c48a9cf09a3752d1707f8dc8962f8309da5edddf6e1dd1f403f01c85103908c74232368a8db9e076615adec925f781a0e918ec85f4
+    hermes-estree: "npm:0.32.0"
+  checksum: 10c0/5902d2c5d347c0629fba07a47eaad5569590ac69bc8bfb2e454e08d2dfbe1ebd989d88518dca2cba64061689b5eac5960ae6bd15a4a66600bbf377498a3234b7
   languageName: node
   linkType: hard
 
@@ -2108,21 +2123,6 @@ __metadata:
   checksum: 10c0/2ab5472e32ce2d25279a9d22365c5dd5b95fe40497ca43fa329aa61687fca56e36837615a1b6adfc4ca540389383185680a23497d75a1698b1dcbb52741d29a4
   languageName: node
   linkType: hard
-
-"xgettext-js@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "xgettext-js@workspace:."
-  dependencies:
-    chai: "npm:^4.2.0"
-    eslint: "npm:^5.16.0"
-    eslint-config-wpcalypso: "npm:^4.0.1"
-    eslint-plugin-wpcalypso: "npm:^4.1.0"
-    estree-walker: "npm:^0.6.1"
-    hermes-parser: "npm:0.26.0"
-    lodash: "npm:^4.17.15"
-    mocha: "npm:^6.2.0"
-  languageName: unknown
-  linkType: soft
 
 "y18n@npm:^4.0.0":
   version: 4.0.3
