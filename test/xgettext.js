@@ -1,5 +1,6 @@
-var expect = require( 'chai' ).expect,
-	XGettext = require( '../xgettext' );
+/* eslint-disable wpcalypso/import-docblock */
+import { expect } from 'chai';
+import XGettext from '../xgettext.js';
 
 it( 'should be instantiable', function() {
 	var parser = new XGettext();

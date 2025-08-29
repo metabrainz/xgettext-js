@@ -1,6 +1,7 @@
-var _ = require( 'lodash' ),
-	parser = require( 'hermes-parser' ),
-	walk = require( 'estree-walker' ).walk;
+/* eslint-disable wpcalypso/import-docblock */
+import _ from 'lodash';
+import parser from 'hermes-parser';
+import { walk } from 'estree-walker';
 
 /**
  * XGettext will parse a given input string for any instances of i18n function
@@ -11,7 +12,7 @@ var _ = require( 'lodash' ),
  *                         XGettext.defaultOptions for available options and a
  *                         description for each
  */
-var XGettext = module.exports = function( options ) {
+export default function XGettext( options ) {
 	if ( 'object' !== typeof options ) {
 		options = {};
 	}
@@ -20,7 +21,7 @@ var XGettext = module.exports = function( options ) {
 	this.options.keywords = this._normalizeKeywords( this.options.keywords );
 	this.options.keywordFunctions = Object.keys( this.options.keywords );
 	this.options.parseOptions = _.extend( { locations: true }, this.options.parseOptions );
-};
+}
 
 XGettext.defaultOptions = {
 	/**
