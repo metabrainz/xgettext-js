@@ -1,4 +1,3 @@
-/* eslint-disable wpcalypso/import-docblock */
 import { expect } from 'chai';
 import XGettext from '../xgettext.js';
 

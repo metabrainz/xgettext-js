@@ -1,4 +1,3 @@
-/* eslint-disable wpcalypso/import-docblock */
 import _ from 'lodash';
 import parser from 'hermes-parser';
 import { walk } from 'estree-walker';

@@ -26,8 +26,7 @@
     "url": "git+https://github.com/metabrainz/xgettext-js.git"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "npm run lint && mocha",
+    "test": "mocha",
     "test-watch": "mocha --watch"
   },
   "engines": {
@@ -40,9 +39,6 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-wpcalypso": "^4.0.1",
-    "eslint-plugin-wpcalypso": "^4.1.0",
     "mocha": "^6.2.0"
   },
   "packageManager": "yarn@4.2.2"
